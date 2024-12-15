@@ -111,12 +111,13 @@ Note: you can consider to further seperate the server into the backend and the m
 Here are some examples to enhance the CI/CD pipeline of the application:
 
 1. CI/CD Automation: Use tools like Jenkins to automate build, test, and deployment processes.
-2. Infrastructure as Code: Automate environment setup with Ansible (e.g., installing Node.js, MongoDB, Docker).
-3. Container Orchestration: Use Kubernetes or Docker Swarm to deploy and scale containers.
-4. Monitoring: Implement Prometheus and Grafana for performance monitoring and alerts.
-5. Load Balancing: Incorporate AWS Elastic Load Balancer (ELB) if deploying on AWS.
-6. Zero Downtime Deployment: Use Blue-Green Deployment or Canary Deployment strategies for seamless updates without service interruption.
-7. Testing Enhancements: Incorporate automated end-to-end tests using Cypress or Playwright into the CI/CD pipeline. Also, Use Postman collections for API testing as part of the build process.
+2. Configuration Management: Utilize Ansible to efficiently manage server configurations.
+3. Infrastructure as Code (IaC): Leverage AWS CloudFormation to define and provision cloud infrastructure through code. Automate the setup of AWS resources, including EC2 instances, databases, and S3 buckets, and so on.
+4. Container Orchestration: Use Kubernetes or Docker Swarm to deploy and scale containers.
+5. Monitoring: Implement Prometheus and Grafana for performance monitoring and alerts.
+6. Load Balancing: Incorporate AWS Elastic Load Balancer (ELB) if deploying on AWS.
+7. Zero Downtime Deployment: Use Blue-Green Deployment or Canary Deployment strategies for seamless updates without service interruption.
+8. Testing Enhancements: Incorporate automated end-to-end tests using Cypress or Playwright into the CI/CD pipeline. Also, Use Postman collections for API testing as part of the build process.
 
 These ideas can further improve reliability, scalability, and operational efficiency for the project.
 
