@@ -59,9 +59,9 @@ Below is an overview of how the components in this architecture are connected:
 
 ```mermaid
 graph TD
-    Browser["🌐 Browser (Frontend User)"] -->|Access via port 8080| Client["📱 Client (Frontend)"]
-    Client -->|Connect via port 3000| Server["🖥️ Server (Backend)"]
-    Server -->|Connect via port 27017| Database["🗄️ MongoDB Database"]
+    Browser["🌐 Browser (Frontend User)"] <-->|Access via port 8080| Client["📱 Client (Frontend)"]
+    Client <-->|Connect via port 3000| Server["🖥️ Server (Backend)"]
+    Server <-->|Connect via port 27017| Database["🗄️ MongoDB Database"]
 ```
 
 ### Component Connections
