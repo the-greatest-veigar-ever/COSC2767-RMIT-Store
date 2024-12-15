@@ -145,7 +145,7 @@ At the root of the project, install all dependencies:
 npm install
 ```
 
-Running `npm install` at the root of the project will install dependencies for both the client and server. Specifically, it will:
+Running `npm install` at the root of the project will install dependencies for both the client and server. Specifically, by running that command, it will automatically:
 
 1. Navigate to the `client` directory and install dependencies listed in `package.json`.
 2. Navigate to the `server` directory and install dependencies listed in `package.json`.
