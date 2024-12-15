@@ -351,30 +351,18 @@ To ensure the webpack dev server is correctly configured for both local and EC2 
 **Local Deployment:**
 ```javascript
 devServer: {
-  // Configuration for webpack-dev-server
   port: 8080,
   host: 'localhost', // Listen on localhost network
-  open: true,
-  inline: true,
-  compress: true,
-  hot: true,
-  disableHostCheck: true,
-  historyApiFallback: true
+  ...
 }
 ```
 
 **EC2 Deployment:**
 ```javascript
 devServer: {
-  // Configuration for webpack-dev-server
   port: 8080,
   host: '0.0.0.0', // Listen on all interface network
-  open: true,
-  inline: true,
-  compress: true,
-  hot: true,
-  disableHostCheck: true,
-  historyApiFallback: true
+  ...
 }
 ```
 
