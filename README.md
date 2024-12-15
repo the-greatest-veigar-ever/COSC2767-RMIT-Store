@@ -295,6 +295,7 @@ npm run dev
 
 The frontend should now be accessible at `http://<your-ec2-public-ip>:8080`, and the frontend and backend should communicate properly.
 
+---
 
 ## 🌱 Setting Up Environment Variables
 
