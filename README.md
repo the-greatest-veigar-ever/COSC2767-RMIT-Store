@@ -344,6 +344,42 @@ BASE_API_URL=api
 
 **Important:** Replace `<your-ec2-public-ip>` with your actual EC2 instance's public IP. You can also adjust the value "0.0.0.0" to match the specific public IP addresses required for your pipeline setup.
 
+## 🌐 Configuring Webpack Dev Server
+
+To ensure the webpack dev server is correctly configured for both local and EC2 deployments, update the `devServer` settings in `client/webpack/webpack.dev.js` as follows:
+
+**Local Deployment:**
+```javascript
+devServer: {
+  // Configuration for webpack-dev-server
+  port: 8080,
+  host: 'localhost', // Listen on localhost network
+  open: true,
+  inline: true,
+  compress: true,
+  hot: true,
+  disableHostCheck: true,
+  historyApiFallback: true
+}
+```
+
+**EC2 Deployment:**
+```javascript
+devServer: {
+  // Configuration for webpack-dev-server
+  port: 8080,
+  host: '0.0.0.0', // Listen on all interface network
+  open: true,
+  inline: true,
+  compress: true,
+  hot: true,
+  disableHostCheck: true,
+  historyApiFallback: true
+}
+```
+
+This configuration ensures that the webpack dev server listens on the appropriate network interface based on the deployment environment.
+
 ## 🔐 Developer Notes
 
 - Ensure that MongoDB is running locally or that your MongoDB Atlas cluster is properly configured.
