@@ -77,33 +77,33 @@ This clear separation of concerns ensures scalability, flexibility, and modulari
 
 ## 📚 Recommended Ways for Beginners to Deploy the Website (From Easy to Hard)
 
-### Step 1: Deploy Locally
+### Plan A: Deploy Locally
 
 **Window, MacOS, or Linux**:
    - Follow the instructions in the "Steps to Build, Configure, and Run the Project Locally" section.
 
-### Step 2: Deploy on AWS EC2 (Single Instance)
+### Plan B: Deploy on AWS EC2 (Single Instance)
 
 1. Follow the instructions in the "Configuring and Deploying the Project on AWS EC2" section to deploy both the client and server on a single EC2 instance.
 
-### Step 3: Deploy on AWS EC2 (Separate Instances)
+### Plan C: Deploy on AWS EC2 (Separate Instances)
 
 1. Deploy the client and server on two different EC2 instances.
 2. Ensure that the client instance can communicate with the server instance by updating the `API_URL` in the client's `.env` file to point to the server instance's public IP.
 
-### Step 4: Containerize with Docker
+### Plan D: Containerize with Docker
 
 1. Create Dockerfiles for both the client and server.
 2. Build Docker images for the client and server.
 3. Run the client and server in separate Docker containers in different ec2 servers.
 
-### Step 5: Use Docker Compose
+### Plan E: Use Docker Compose
 
 1. Create a `docker-compose.yml` file to define multi-container services.
 2. Use Docker Compose to orchestrate the client and server containers.
 3. This approach is standard in CI/CD pipelines and team-based development environments.
 
-### Step 6: Upgrade to CI/CD Pipeline
+### Plan F: Upgrade to CI/CD Pipeline
 
 1. CI/CD Automation: Use tools like Jenkins to automate build, test, and deployment processes.
 2. Infrastructure as Code: Automate environment setup with Ansible (e.g., installing Node.js, MongoDB, Docker).
@@ -118,7 +118,7 @@ These ideas can further improve reliability, scalability, and operational effici
 ---
 
 
-## 🔧 Steps to Build, Configure, and Run the Project Locally
+## 🔧 Plan A: Steps to Build, Configure, and Run the Project Locally
 
 Install Node.js and MongoDB on your local computer based on your operating system. For detailed instructions:
 
@@ -197,7 +197,7 @@ npm --prefix ./server run seed:db admin@rmit.edu.vn mypassword
 npm run dev
 ```
 
-## 🚀 Configuring and Deploying the Project on AWS EC2
+## 🚀 Plan B: Configuring and Deploying the Project on AWS EC2
 
 ### Step 1: Launch an EC2 Instance
 
