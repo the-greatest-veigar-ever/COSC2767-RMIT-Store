@@ -312,9 +312,9 @@ Below are examples of .env files for hosting both the client and server on the s
 
 ### Client `.env` File
 
-**Local Example (Default):**
+**Local Example:**
 ```
-API_URL=http://0.0.0.0:3000/api 
+API_URL=http://localhost:3000/api 
 ```
 
 **AWS EC2 Example:**
@@ -324,12 +324,12 @@ API_URL=http://<your-ec2-public-ip>:3000/api
 
 ### Server `.env` File
 
-**Local Example (Default):**
+**Local Example:**
 ```
 PORT=3000
-MONGO_URI=mongodb://0.0.0.0:27017/rmit_database
+MONGO_URI=mongodb://localhost:27017/rmit_database
 JWT_SECRET=my_secret_string
-CLIENT_URL=http://0.0.0.0:8080
+CLIENT_URL=http://localhost:8080
 BASE_API_URL=api
 ```
 
