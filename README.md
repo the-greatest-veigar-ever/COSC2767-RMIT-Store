@@ -90,6 +90,9 @@ This clear separation of concerns ensures scalability, flexibility, and modulari
 
 1. Deploy the client and server on two different EC2 instances.
 2. Ensure that the client instance can communicate with the server instance by updating the `API_URL` in the client's `.env` file to point to the server instance's public IP.
+3. Configure the EC2 Security Groups to allow the required ports to enable the communication between client and server on different EC2 servers.
+
+Note: you can consider to further seperate the server into the backend and the mongodb into seperate services on different servers. This improves modularity and scalability, making the system easier to manage and expand.
 
 ### Plan D: Containerize with Docker
 
