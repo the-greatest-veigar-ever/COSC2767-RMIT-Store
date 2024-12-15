@@ -173,7 +173,7 @@ npm --prefix ./server run seed:db admin@rmit.edu.vn mypassword
 
 ### Step 3: Run the Project
 
-To start the project, use the following command:
+To start the project, at the root of the project, use the following command:
 
 ```bash
 npm run dev
