@@ -1,8 +1,13 @@
-# RMIT Store 🛒
+<p align="center">
+    <img src="https://i.imgur.com/gngfVcm.png" width=320>
+</p>
+
 
 <p align="center">
     <img src="https://i.imgur.com/e6H7HA3.jpg" width=900>
 </p>
+
+# RMIT Store 🛒
 
 The RMIT Store is dedicated to selling glorious and wholesome RMIT merchandise, including lanyards, hoodies, T-shirts, cups, and more. It aims to enrich the student experience within the university community by offering a diverse range of services.
 
@@ -74,6 +79,8 @@ graph TD
 This clear separation of concerns ensures scalability, flexibility, and modularity in the application.
 
 > **Note**: These port numbers are critical, especially if you plan to run these components as services in containers on different servers. This modular structure supports scalability and can be adjusted based on CI/CD requirements to streamline deployment. 
+
+---
 
 ## 📚 Recommended Ways for Beginners to Deploy the Website (From Easy to Hard)
 
