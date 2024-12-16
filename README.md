@@ -29,11 +29,12 @@ In this project, additional tools and libraries include:
 ### For Members (Including Admins):
 
 - **Account Management**:
-
+  - Create a new account or log in securely using email and password.
   - Change account details such as first name, last name, phone, password, and address.
 
 - **Shopping Features**:
-
+  - Browsing different products.
+  - Filter products by price and name.
   - Make orders by purchasing products.
   - Check order history.
   - Leave product reviews.
