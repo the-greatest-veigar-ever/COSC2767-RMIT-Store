@@ -374,9 +374,6 @@ This configuration ensures that the webpack dev server listens on the appropriat
 Here is the quick overview of project structure:
 
 ```
-.gitignore               # Specifies files and directories to be ignored by Git.
-README.md               # Documentation and setup instructions.
-
 client/                 # Client-side code (React.js application).
   ├── .env              # Environment variables for the client.
   ├── .env.example      # Example environment variables (backup).
@@ -401,6 +398,8 @@ server/                 # Server-side code (Node.js application).
   └── package.json      # Server dependencies and scripts.
 
 package.json            # Root-level project dependencies and scripts.
+.gitignore               # Specifies files and directories to be ignored by Git.
+README.md               # Documentation and setup instructions.
 ```
 
 The `client/` and `server/` directories are isolated, promoting independent development and deployment.
