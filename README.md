@@ -1,10 +1,5 @@
 <p align="center">
-    <img src="https://i.imgur.com/gngfVcm.png" width=320>
-</p>
-
-
-<p align="center">
-    <img src="https://i.imgur.com/e6H7HA3.jpg" width=900>
+    <img src="https://i.imgur.com/Om7ww0e.png" width=900>
 </p>
 
 # RMIT Store 🛒
