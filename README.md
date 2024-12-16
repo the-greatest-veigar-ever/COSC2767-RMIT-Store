@@ -214,6 +214,13 @@ To start the project, at the root of the project, use the following command:
 npm run dev
 ```
 
+Running `npm run dev` at the root of the project will start for both the client (frontend) and server (backend). Specifically, by running that command, it will automatically:
+
+1. Navigate to the `client` directory and run the command `npm run dev` to start the client.
+2. Navigate to the `server` directory and run the command `npm run dev` to start the server.
+
+Alternatively, you can choose to run each of them separately. However, for convenience, we recommend running `npm run dev` at the root to run both in one go.
+
 The website should now be accessible at:
 
 ```
