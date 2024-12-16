@@ -75,6 +75,39 @@ This clear separation of concerns ensures scalability, flexibility, and modulari
 
 > **Note**: These port numbers are critical, especially if you plan to run these components as services in containers on different servers. This modular structure supports scalability and can be adjusted based on CI/CD requirements to streamline deployment. 
 
+## 📂 Project Structure
+
+Here is the quick overview of project structure:
+
+```
+client/                 # Client-side code (React.js application).
+  ├── .env              # Environment variables for the client.
+  ├── .env.example      # Example environment variables (backup).
+  ├── app/              # Main application code.
+  ├── public/           # Public assets.
+  │   ├── images/       # Publicly accessible images.
+  │   └── index.html    # Entry HTML file for the client.
+  ├── webpack/          # Webpack configuration files.
+  │   └── webpack.dev.js # Development-specific Webpack configuration.
+  └── package.json      # Client dependencies and scripts.
+
+server/                 # Server-side code (Node.js application).
+  ├── .env              # Environment variables for the server.
+  ├── .env.example      # Example environment variables (backup).
+  ├── config/           # Configuration files (e.g., database, server settings).
+  ├── middleware/       # Custom Express middleware.
+  ├── models/           # Mongoose schemas and models.
+  ├── routes/           # Express route handlers.
+  ├── utils/            # Utility functions (e.g., helpers).
+  ├── index.js          # Server entry point.
+  ├── nodemon.json      # Nodemon configuration file.
+  └── package.json      # Server dependencies and scripts.
+
+package.json            # Root-level project dependencies and scripts.
+.gitignore               # Specifies files and directories to be ignored by Git.
+README.md               # Documentation and setup instructions.
+```
+
 ---
 
 ## 📚 Recommended Ways for Beginners to Deploy the Website (From Easy to Hard)
@@ -371,38 +404,6 @@ devServer: {
 
 This configuration ensures that the webpack dev server listens on the appropriate network interface based on the deployment environment.
 
-## 📂 Project Structure
-
-Here is the quick overview of project structure:
-
-```
-client/                 # Client-side code (React.js application).
-  ├── .env              # Environment variables for the client.
-  ├── .env.example      # Example environment variables (backup).
-  ├── app/              # Main application code.
-  ├── public/           # Public assets.
-  │   ├── images/       # Publicly accessible images.
-  │   └── index.html    # Entry HTML file for the client.
-  ├── webpack/          # Webpack configuration files.
-  │   └── webpack.dev.js # Development-specific Webpack configuration.
-  └── package.json      # Client dependencies and scripts.
-
-server/                 # Server-side code (Node.js application).
-  ├── .env              # Environment variables for the server.
-  ├── .env.example      # Example environment variables (backup).
-  ├── config/           # Configuration files (e.g., database, server settings).
-  ├── middleware/       # Custom Express middleware.
-  ├── models/           # Mongoose schemas and models.
-  ├── routes/           # Express route handlers.
-  ├── utils/            # Utility functions (e.g., helpers).
-  ├── index.js          # Server entry point.
-  ├── nodemon.json      # Nodemon configuration file.
-  └── package.json      # Server dependencies and scripts.
-
-package.json            # Root-level project dependencies and scripts.
-.gitignore               # Specifies files and directories to be ignored by Git.
-README.md               # Documentation and setup instructions.
-```
 
 The `client/` and `server/` directories are isolated, promoting independent development and deployment.
 
