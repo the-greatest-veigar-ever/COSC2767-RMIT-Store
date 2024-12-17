@@ -153,7 +153,7 @@ Here are some examples to enhance the CI/CD pipeline of the application:
 5. Monitoring: Implement Prometheus and Grafana for performance monitoring and alerts.
 6. Load Balancing: Incorporate AWS Elastic Load Balancer (ELB) if deploying on AWS.
 7. Zero Downtime Deployment: Use Blue-Green Deployment or Canary Deployment strategies for seamless updates without service interruption.
-8. Testing Enhancements: Incorporate automated end-to-end tests using Cypress or Playwright into the CI/CD pipeline. Also, Use Postman collections for API testing as part of the build process.
+8. Testing Enhancements: Incorporate automated unit, integration, and end-to-end (Web UI) tests into the CI/CD pipeline to ensure comprehensive coverage and robust quality across all application layers.
 
 These ideas can further improve reliability, scalability, and operational efficiency for the project.
 
